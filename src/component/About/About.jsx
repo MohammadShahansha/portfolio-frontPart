@@ -22,17 +22,72 @@ const About = () => {
           Full-Stack Developer
         </h2>
       </div>
-      <div className="flex md:mx-20 gap-10">
+      <div className="md:flex md:mx-20 gap-10 px-5">
         <div className="w-full border border-r left-about">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fuga
-          necessitatibus obcaecati? Vero repellendus expedita veniam cumque cum,
-          reiciendis soluta.
+          <div>
+            <h2 className="font-semibold text-2xl ">Introduction:</h2>
+            <p className="text-gray-400">
+              Hi, I'm Md.Shahansha, a passionate full-stack developer skilled in
+              creating dynamic and responsive web applications. I specialize in
+              both front-end and back-end technologies, ensuring user-friendly
+              and highly functional solutions.
+            </p>
+          </div>
+          <div className="my-5">
+            <h2 className="font-semibold text-2xl ">
+              Education and Certifications:
+            </h2>
+            <p className="text-gray-400">
+              I study in Informatin & Communication Technology from Comilla
+              University. However, I achieved 95% marks in the Programming Hero
+              course and earned a certification that reflects my commitment to
+              continuous learning and excellence. My education has equipped me
+              with the skills to tackle complex challenges and deliver top-notch
+              solutions.
+            </p>
+          </div>
+          <div className="">
+            <h2 className="font-semibold text-2xl ">
+              Personal Interests and Values:
+            </h2>
+            <p className="text-gray-400">
+              Beyond coding, I love traveling and exploring new cultures. I'm
+              passionate about helping others and sharing my knowledge with the
+              community. These interests drive my dedication and integrity in my
+              work.
+            </p>
+          </div>
         </div>
         <div className="w-full right-about">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis non
-          assumenda dolor molestias mollitia vitae perspiciatis reiciendis ipsam
-          molestiae delectus doloremque, ratione quam sed dignissimos sapiente
-          ducimus sit vel sint?
+          <div>
+            <h2 className="font-semibold text-2xl ">
+              Professional Experience:
+            </h2>
+            <p className="text-gray-400">
+              I have developed projects like PatsSmart, craft & art school,
+              shoes shop etc. My expertise includes building RESTful APIs with
+              Node.js and Express.js, and creating responsive front-ends with
+              React, Next and Tailwind CSS. I also have experience with MongoDB,
+              Firebase, and PostgreSQL, and am proficient in integrating
+              third-party APIs and optimizing performance.
+            </p>
+          </div>
+          <div className="my-5">
+            <h2 className="font-semibold text-2xl ">Languages:</h2>
+            <p className="text-gray-400">
+              I am fluent in Bangla and have a good command of English, allowing
+              me to effectively communicate and collaborate in diverse settings.
+            </p>
+          </div>
+          <div className="my-5">
+            <h2 className="font-semibold text-2xl ">Others About Me:</h2>
+            <p className="text-gray-400">
+              I am unmarrid and 25 years old. I am from Bangladesh and distric
+              Kishroeganj. I believe in maintaining a balance between my
+              professional and personal life, and these aspects inspire my
+              dedication to my work.
+            </p>
+          </div>
         </div>
       </div>
     </div>
