@@ -1,0 +1,100 @@
+.project{
+    /* min-height: auto; */
+    padding-bottom: 5rem;
+    background-color: var(--second-bg-color);
+}
+.image-wrap {
+    width: full;
+    height: 230px;
+    overflow: hidden;
+    /* margin: 50px auto; */
+}
+.image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: all 2s ease-in-out;
+    border-radius: 10px;
+}
+.image-wrap:hover img {
+    object-position: bottom center;
+}
+
+.bttn-box2{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    /* width: 300px; */
+    height: 45px;
+}
+
+.bttn-box2 .bttn2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--main-color);
+    border: 3px solid var(--main-color);
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+.bttn-box2 .bttn2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+
+}
+.bttn-box2 .bttn2:nth-child(2) {
+    background: transparent;
+    color: var(--main-color);
+}
+.bttn-box2 .bttn2:nth-child(2):hover{
+    color: var(--bg-color);
+}
+.bttn-box2 .bttn2:nth-child(2)::before{
+    background: var(--main-color);
+}
+
+.bttn-box2 .bttn2:hover::before{
+    width: 100%;
+}
+.bttn-box2 .bttn2:nth-child(1):hover{
+    color: var(--main-color);
+}
+.bttn-box2 .bttn2:nth-child(3):hover{
+    color: var(--main-color);
+}
+
+
+
+@media screen and (max-width: 575px){
+    .bttn-box2 .bttn2 {
+        text-align: center;
+        line-height: 20px;
+        margin-right: 3px;
+    }
+    .image-wrap {
+        width: full;
+        height: 130px;
+        overflow: hidden;
+        /* margin: 50px auto; */
+    }
+    .bttn-box2{
+        margin-bottom: -23px;
+    }
+}

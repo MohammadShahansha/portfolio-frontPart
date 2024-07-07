@@ -1,0 +1,25 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* padding: 2rem 9%; */
+    /* background-color: transparent; */
+    background-color: var(--bg-color);
+    z-index: 100;
+}
+
+.logo{
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+li a{
+    font-size: 25px;
+    columns: var(--text-color);
+    margin-left: 20px;
+}
+
+li a:hover{
+    color: var(--main-color);
+}
