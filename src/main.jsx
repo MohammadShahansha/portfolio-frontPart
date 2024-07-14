@@ -11,6 +11,7 @@ import Project from "./component/Project/Project";
 import Contact from "./component/Contact/Contact";
 import DetailProject from "./component/DetailProject/DetailProject";
 import Main from "./components/Layout/Mani";
+import Blog from "./component/Blog/Blog";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
         element: <DetailProject></DetailProject>,
         // loader: ({ params }) =>
         //   fetch(`http://localhost:5000/api/single-project/${params.id}`),
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
       },
     ],
   },

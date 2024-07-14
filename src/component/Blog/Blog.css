@@ -1,0 +1,16 @@
+.sidbar-button {
+  /* height: 1.7rem; */
+  border-bottom: 3px solid #aeacac;
+  border-radius: 20px;
+  width: 95%;
+}
+
+.border-verticale {
+  border-right: 3px solid #414141fc;
+}
+
+@media screen and (max-width: 575px) {
+  .sidbar-button {
+    width: 100%;
+  }
+}

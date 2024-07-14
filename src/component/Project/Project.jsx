@@ -108,7 +108,7 @@ const Project = () => {
             </a>
           </div>
         </VerticalTimelineElement> */}
-        <VerticalTimelineElement
+        {/* <VerticalTimelineElement
           className="first-project"
           contentStyle={{ background: "#081b29", color: "#ededed" }}
           contentArrowStyle={{ borderRight: "10px solid  #081b29" }}
@@ -148,7 +148,7 @@ const Project = () => {
               </a>
             </div>
           </div>
-        </VerticalTimelineElement>
+        </VerticalTimelineElement> */}
         {allProject?.data?.map((project) => (
           <VerticalTimelineElement
             key={project._id}
