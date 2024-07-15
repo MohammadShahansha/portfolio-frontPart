@@ -23,7 +23,7 @@ const Benner = () => {
 
   return (
     <div
-      className="benner md:flex md:items-center md:justify-between"
+      className="benner h-screen md:h-full md:flex md:items-center md:justify-between"
       id="home"
     >
       <div className="benner-container">

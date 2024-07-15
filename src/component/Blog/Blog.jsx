@@ -9,6 +9,7 @@ const Blog = () => {
   const [allBlogs, setAllBlogs] = useState([]);
   const [singleBlog, setSingleBlog] = useState(null);
   const [selectBlogId, setSelectBlogId] = useState(null);
+  const [activeBlogId, setActiveBlogId] = useState(null);
   useEffect(() => {
     fetch("http://localhost:5000/api/blogs")
       .then((res) => res.json())
@@ -29,11 +30,12 @@ const Blog = () => {
 
   const handleSingleBlog = (blog) => {
     setSelectBlogId(blog?._id);
+    setActiveBlogId(blog?._id);
   };
   console.log(singleBlog);
 
   return (
-    <div className="py-24 text-gray-300">
+    <div className="py-24 text-gray-300 min-h-screen md:h-screen md:mt-5">
       <div className="md:flex ">
         <div className="md:w-1/5 border-verticale">
           <h1 className="text-3xl mb-5 md:mb-0 md:text-2xl font-semibold text-center">
@@ -44,7 +46,9 @@ const Blog = () => {
               <div key={index} className="mb-2">
                 <button
                   onClick={() => handleSingleBlog(blog)}
-                  className=" sidbar-button hover:bg-[--main-color] hover:text-white"
+                  className={`sidbar-button hover:bg-[--second-bg-color] hover:text-white ${
+                    activeBlogId === blog?._id ? "bg-[--second-bg-color]" : ""
+                  }`}
                 >
                   <h2 className="text-left font-semibold text-lg py-3 px-3 text-gray-300">
                     {blog.title}
@@ -60,7 +64,7 @@ const Blog = () => {
               <h2 className="sm:text-lg md:text-3xl font-semibold mb-3">
                 {singleBlog?.title}
               </h2>
-              {/* <p>{singleBlog?.description}</p> */}
+
               <p className="pr-5">{stripHtmlTags(singleBlog?.description)}</p>
             </div>
           ) : (

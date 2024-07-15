@@ -1,38 +1,74 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./NavBar.css";
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
+  const location = useLocation();
+  const [activeRoute, setActiveRoute] = useState("/");
+  useEffect(() => {
+    setActiveRoute(location.pathname);
+  }, [location]);
   const navItem = (
     <div className="lg:flex">
       <li>
-        <a href="/" className="text-2xl font-semibold">
+        <Link
+          to="/"
+          className={`text-2xl font-semibold ${
+            activeRoute === "/" ? "text-[--main-color]" : ""
+          }`}
+        >
           Home
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/about" className="text-2xl font-semibold">
+        <Link
+          to="/about"
+          className={`text-2xl font-semibold ${
+            activeRoute === "/about" ? "text-[--main-color]" : ""
+          }`}
+        >
           About
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/skills" className="text-2xl font-semibold">
+        <Link
+          to="/skills"
+          className={`text-2xl font-semibold ${
+            activeRoute === "/skills" ? "text-[--main-color]" : ""
+          }`}
+        >
           Skill
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/project" className="text-2xl font-semibold">
+        <Link
+          to="/project"
+          className={`text-2xl font-semibold ${
+            activeRoute === "/project" ? "text-[--main-color]" : ""
+          }`}
+        >
           Project
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/contact" className="text-2xl font-semibold">
+        <Link
+          to="/contact"
+          className={`text-2xl font-semibold ${
+            activeRoute === "/contact" ? "text-[--main-color]" : ""
+          }`}
+        >
           Contact
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/blog" className="text-2xl font-semibold">
+        <Link
+          to="/blog"
+          className={`text-2xl font-semibold ${
+            activeRoute === "/blog" ? "text-[--main-color]" : ""
+          }`}
+        >
           Blog
-        </a>
+        </Link>
       </li>
     </div>
   );
