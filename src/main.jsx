@@ -40,8 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/detailProject/:id",
         element: <DetailProject></DetailProject>,
-        // loader: ({ params }) =>
-        //   fetch(`http://localhost:5000/api/single-project/${params.id}`),
+        loader: ({ params }) =>
+          fetch(
+            `https://portfolio-backend-ecru-two.vercel.app/api/single-project/${params.id}`
+          ),
       },
       {
         path: "/blog",

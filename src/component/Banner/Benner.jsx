@@ -43,7 +43,7 @@ const Benner = () => {
         {/* <p className='mb-6 md:mb-auto'>I am Mohammad Shahansha.I am a Bangladeshi.I read in Comilla University in 3rd year and My subject is B.Sc Engineering in Information & Communication Technology. </p> */}
         <div className="bttn-box">
           <a
-            href="https://drive.google.com/file/d/1SOJCi8SuJAKZ5Jfy6xZCTXW9HqO9HLbq/view?usp=sharing"
+            href="https://drive.google.com/file/d/18McmkKBy_5sqCjEfRw_XpradGzT0TmBZ/view?usp=sharing"
             className="bttn"
           >
             Resume

@@ -4,7 +4,7 @@ import "./Skills.css";
 const Skills = () => {
   const [allSkills, setAllSkills] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/api/skills")
+    fetch("https://portfolio-backend-ecru-two.vercel.app/api/skills")
       .then((res) => res.json())
       .then((data) => setAllSkills(data));
   }, []);

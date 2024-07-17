@@ -11,14 +11,16 @@ const Blog = () => {
   const [selectBlogId, setSelectBlogId] = useState(null);
   const [activeBlogId, setActiveBlogId] = useState(null);
   useEffect(() => {
-    fetch("http://localhost:5000/api/blogs")
+    fetch("https://portfolio-backend-ecru-two.vercel.app/api/blogs")
       .then((res) => res.json())
       .then((data) => setAllBlogs(data));
   }, []);
   //   console.log(allBlogs);
   useEffect(() => {
     if (selectBlogId) {
-      fetch(`http://localhost:5000/api/single-blog/${selectBlogId}`)
+      fetch(
+        `https://portfolio-backend-ecru-two.vercel.app/api/single-blog/${selectBlogId}`
+      )
         .then((res) => res.json())
         .then((data) => {
           const description = data?.data?.description;
