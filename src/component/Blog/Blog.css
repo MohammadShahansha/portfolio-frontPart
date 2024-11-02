@@ -8,7 +8,9 @@
 .border-verticale {
   border-right: 3px solid #414141fc;
 }
-
+.ql-editor {
+  color: white !important; /* Set the text color to white */
+}
 @media screen and (max-width: 575px) {
   .sidbar-button {
     width: 100%;

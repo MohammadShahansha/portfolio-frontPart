@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@types/react-html-parser": "^2.0.6",
+    "dompurify": "^3.1.7",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",

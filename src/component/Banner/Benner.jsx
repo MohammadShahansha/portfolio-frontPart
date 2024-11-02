@@ -28,7 +28,7 @@ const Benner = () => {
     >
       <div className="benner-container">
         <h2 className="text-2xl font-semibold">Hello, It's Me</h2>
-        <h1>Mohammad Shahansha</h1>
+        <h1>Md. Shahansha Mia</h1>
         <div className="text-animate App mt-3">
           <h2 className="text-2xl font-semibold">
             And I'm a <span ref={el} />
