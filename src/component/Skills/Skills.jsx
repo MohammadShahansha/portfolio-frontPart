@@ -16,10 +16,15 @@ import antD from "../../assets/skills/antDesign.png";
 import shadCn from "../../assets/skills/shadcnUI.png";
 
 import node from "../../assets/skills/nodejs.png";
-import expr from "../../assets/skills/Express.png";
+import express from "../../assets/skills/Express.png";
+import jwt from "../../assets/skills/JWT.png";
+import prisma from "../../assets/skills/Prisma.png";
+import graphQL from "../../assets/skills/graphQL.png";
 
 import mongodb from "../../assets/skills/MongoDB.png";
 import mongoose from "../../assets/skills/Mongoose.png";
+import postgresSql from "../../assets/skills/postgreSQL.png";
+import sql from "../../assets/skills/sql.png";
 // const skillArray = [
 //   {
 //     image: html,
@@ -67,20 +72,29 @@ const frontEndSkill = [
   { image: css, name: "CSS" },
   { image: tailwind, name: "Tailwind CSS" },
   { image: bootsTrap, name: "BootsTrap" },
-
   { image: js, name: "JavaScript" },
   { image: reactJs, name: "React" },
-
   { image: ts, name: "TypeScript" },
   { image: redux, name: "Redux" },
   { image: nextjs, name: "Next.js" },
-
   { image: firebase, name: "Firebase" },
   { image: daisyUi, name: "Daisy Ui" },
   { image: materialUi, name: "Materiail Ui" },
   { image: antD, name: "ant Design" },
-
   { image: shadCn, name: "shadCn Ui" },
+];
+const backendSkills = [
+  { image: node, name: "Node.js" },
+  { image: express, name: "Express.js" },
+  { image: jwt, name: "JWT" },
+  { image: prisma, name: "Prisma" },
+  { image: graphQL, name: "Applo GraphQL" },
+];
+const dataBase = [
+  { image: mongodb, name: "Node.js" },
+  { image: mongoose, name: "Express.js" },
+  { image: postgresSql, name: "PostgresSQL" },
+  { image: sql, name: "SQL" },
 ];
 const Skills = () => {
   const [allSkills, setAllSkills] = useState([]);
@@ -144,22 +158,63 @@ const Skills = () => {
       <h2 className="heading font-bold">
         My <span className="text-[--main-color]">Skills</span>
       </h2>
-      <h2 className="heading font-bold">
-        Front-<span className="text-[--main-color]">End</span>
-      </h2>
-      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-7 gap-5 px-5">
-        {frontEndSkill.map((item, index) => {
-          return (
-            <div key={index} className="each-skill border-4">
-              <div className="border-fixe">
-                <img src={item.image} alt="skill" className="img-style" />
-                <span className="skill-name text-2xl flex items-center justify-center text-center">
-                  {item.name}
-                </span>
+      <div>
+        <h2 className=" text-3xl font-bold px-5 my-5">
+          Front-<span className="text-[--main-color]">End:</span>
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-7 gap-5 px-5">
+          {frontEndSkill.map((item, index) => {
+            return (
+              <div key={index} className="each-skill border-4">
+                <div className="border-fixe">
+                  <img src={item.image} alt="skill" className="img-style" />
+                  <span className="skill-name text-2xl flex items-center justify-center text-center">
+                    {item.name}
+                  </span>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
+      </div>
+      <div>
+        <h2 className=" text-3xl font-bold px-5 mt-10 mb-5">
+          Back-<span className="text-[--main-color]">End:</span>
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-7 gap-5 px-5">
+          {backendSkills.map((item, index) => {
+            return (
+              <div key={index} className="each-skill border-4">
+                <div className="border-fixe">
+                  <img src={item.image} alt="skill" className="img-style" />
+                  <span className="skill-name text-2xl flex items-center justify-center text-center">
+                    {item.name}
+                  </span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div>
+        <h2 className=" text-3xl font-bold px-5 mt-10 mb-5">
+          Data<span className="text-[--main-color]">base:</span>
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-7 gap-5 px-5">
+          {dataBase.map((item, index) => {
+            return (
+              <div key={index} className="each-skill border-4">
+                <div className="border-fixe">
+                  <img src={item.image} alt="skill" className="img-style" />
+                  <span className="skill-name text-2xl flex items-center justify-center text-center">
+                    {item.name}
+                  </span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
