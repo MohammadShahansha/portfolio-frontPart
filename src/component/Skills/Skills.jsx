@@ -7,12 +7,19 @@ import js from "../../assets/skills/js.png";
 import ts from "../../assets/skills/ts.png";
 import reactJs from "../../assets/skills/react.js.png";
 import redux from "../../assets/skills/redux.png";
-import mongodb from "../../assets/skills/MongoDB.png";
-import mongoose from "../../assets/skills/Mongoose.png";
 import firebase from "../../assets/skills/Firebase.png";
 import nextjs from "../../assets/skills/next.js.png";
+import bootsTrap from "../../assets/skills/bootstrap.png";
+import daisyUi from "../../assets/skills/DaisyUI.png";
+import materialUi from "../../assets/skills/MaterialUI.png";
+import antD from "../../assets/skills/antDesign.png";
+import shadCn from "../../assets/skills/shadcnUI.png";
+
 import node from "../../assets/skills/nodejs.png";
 import expr from "../../assets/skills/Express.png";
+
+import mongodb from "../../assets/skills/MongoDB.png";
+import mongoose from "../../assets/skills/Mongoose.png";
 // const skillArray = [
 //   {
 //     image: html,
@@ -55,20 +62,25 @@ import expr from "../../assets/skills/Express.png";
 //   },
 // ];
 
-const skillArray = [
+const frontEndSkill = [
   { image: html, name: "HTML" },
   { image: css, name: "CSS" },
   { image: tailwind, name: "Tailwind CSS" },
-  { image: reactJs, name: "React" },
-  { image: redux, name: "Redux" },
+  { image: bootsTrap, name: "BootsTrap" },
+
   { image: js, name: "JavaScript" },
+  { image: reactJs, name: "React" },
+
   { image: ts, name: "TypeScript" },
-  { image: mongodb, name: "MongoDB" },
-  { image: mongoose, name: "Mongoose" },
-  { image: firebase, name: "Firebase" },
-  { image: node, name: "Node.js" },
-  { image: expr, name: "Express" },
+  { image: redux, name: "Redux" },
   { image: nextjs, name: "Next.js" },
+
+  { image: firebase, name: "Firebase" },
+  { image: daisyUi, name: "Daisy Ui" },
+  { image: materialUi, name: "Materiail Ui" },
+  { image: antD, name: "ant Design" },
+
+  { image: shadCn, name: "shadCn Ui" },
 ];
 const Skills = () => {
   const [allSkills, setAllSkills] = useState([]);
@@ -132,8 +144,11 @@ const Skills = () => {
       <h2 className="heading font-bold">
         My <span className="text-[--main-color]">Skills</span>
       </h2>
+      <h2 className="heading font-bold">
+        Front-<span className="text-[--main-color]">End</span>
+      </h2>
       <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-7 gap-5 px-5">
-        {skillArray.map((item, index) => {
+        {frontEndSkill.map((item, index) => {
           return (
             <div key={index} className="each-skill border-4">
               <div className="border-fixe">
