@@ -25,48 +25,16 @@ import mongodb from "../../assets/skills/MongoDB.png";
 import mongoose from "../../assets/skills/Mongoose.png";
 import postgresSql from "../../assets/skills/postgreSQL.png";
 import sql from "../../assets/skills/sql.png";
-// const skillArray = [
-//   {
-//     image: html,
-//   },
-//   {
-//     image: css,
-//   },
-//   {
-//     image: tailwind,
-//   },
-//   {
-//     image: reactJs,
-//   },
-//   {
-//     image: redux,
-//   },
-//   {
-//     image: js,
-//   },
-//   {
-//     image: ts,
-//   },
-//   {
-//     image: mongodb,
-//   },
-//   {
-//     image: mongoose,
-//   },
-//   {
-//     image: firebase,
-//   },
-//   {
-//     image: node,
-//   },
-//   {
-//     image: expr,
-//   },
-//   {
-//     image: nextjs,
-//   },
-// ];
-
+import stripe from "../../assets/skills/stripe.png";
+import sslcommerz from "../../assets/skills/sslcommerz.png";
+import gitHub from "../../assets/skills/github.png";
+import git from "../../assets/skills/Git.png";
+import chatGPT from "../../assets/skills/ChatGPT.png";
+import figma from "../../assets/skills/Figma.png";
+import vsCode from "../../assets/skills/VScode.png";
+import canva from "../../assets/skills/Canva.png";
+import vercel from "../../assets/skills/Vercel.png";
+import netlify from "../../assets/skills/Netlify.png";
 const frontEndSkill = [
   { image: html, name: "HTML" },
   { image: css, name: "CSS" },
@@ -95,6 +63,20 @@ const dataBase = [
   { image: mongoose, name: "Express.js" },
   { image: postgresSql, name: "PostgresSQL" },
   { image: sql, name: "SQL" },
+];
+const paymentSystem = [
+  { image: stripe, name: "Stripe" },
+  { image: sslcommerz, name: "SSLCommerz" },
+];
+const tools = [
+  { image: gitHub, name: "GitHub" },
+  { image: git, name: "Git" },
+  { image: vsCode, name: "VS Code" },
+  { image: chatGPT, name: "Chat GPT" },
+  { image: figma, name: "Figma" },
+  { image: canva, name: "Canva" },
+  { image: vercel, name: "Vercel" },
+  { image: netlify, name: "Netlify" },
 ];
 const Skills = () => {
   const [allSkills, setAllSkills] = useState([]);
@@ -162,13 +144,13 @@ const Skills = () => {
         <h2 className=" text-3xl font-bold px-5 my-5">
           Front-<span className="text-[--main-color]">End:</span>
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-7 gap-5 px-5">
+        <div className="grid grid-cols-3 md:grid-cols-7 lg:grid-cols-10 gap-5 px-5">
           {frontEndSkill.map((item, index) => {
             return (
               <div key={index} className="each-skill border-4">
                 <div className="border-fixe">
                   <img src={item.image} alt="skill" className="img-style" />
-                  <span className="skill-name text-2xl flex items-center justify-center text-center">
+                  <span className="skill-name  flex items-center justify-center text-center">
                     {item.name}
                   </span>
                 </div>
@@ -178,16 +160,36 @@ const Skills = () => {
         </div>
       </div>
       <div>
-        <h2 className=" text-3xl font-bold px-5 mt-10 mb-5">
+        <h2 className=" text-3xl font-bold px-5 mt-14 mb-5">
           Back-<span className="text-[--main-color]">End:</span>
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-7 gap-5 px-5">
+        <div className="grid grid-cols-3 md:grid-cols-7 lg:grid-cols-10 gap-5 px-5">
           {backendSkills.map((item, index) => {
             return (
               <div key={index} className="each-skill border-4">
                 <div className="border-fixe">
                   <img src={item.image} alt="skill" className="img-style" />
-                  <span className="skill-name text-2xl flex items-center justify-center text-center">
+                  <span className="skill-name flex items-center justify-center text-center">
+                    {item.name}
+                  </span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div>
+        <h2 className=" text-3xl font-bold px-5 mt-14 mb-5">
+          Data<span className="text-[--main-color]">base:</span>
+        </h2>
+        <div className="grid grid-cols-3 md:grid-cols-7 lg:grid-cols-10 gap-5 px-5">
+          {dataBase.map((item, index) => {
+            return (
+              <div key={index} className="each-skill border-4">
+                <div className="border-fixe">
+                  <img src={item.image} alt="skill" className="img-style" />
+                  <span className="skill-name  flex items-center justify-center text-center">
                     {item.name}
                   </span>
                 </div>
@@ -199,15 +201,35 @@ const Skills = () => {
 
       <div>
         <h2 className=" text-3xl font-bold px-5 mt-10 mb-5">
-          Data<span className="text-[--main-color]">base:</span>
+          Payment <span className="text-[--main-color]">System:</span>
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-7 gap-5 px-5">
-          {dataBase.map((item, index) => {
+        <div className="grid grid-cols-3 md:grid-cols-7 lg:grid-cols-10 gap-5 px-5">
+          {paymentSystem.map((item, index) => {
             return (
               <div key={index} className="each-skill border-4">
                 <div className="border-fixe">
                   <img src={item.image} alt="skill" className="img-style" />
-                  <span className="skill-name text-2xl flex items-center justify-center text-center">
+                  <span className="skill-name flex items-center justify-center text-center">
+                    {item.name}
+                  </span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div>
+        <h2 className=" text-3xl font-bold px-5 mt-10 mb-5">
+          Too<span className="text-[--main-color]">ls:</span>
+        </h2>
+        <div className="grid grid-cols-3 md:grid-cols-7 lg:grid-cols-10 gap-5 px-5">
+          {tools.map((item, index) => {
+            return (
+              <div key={index} className="each-skill border-4">
+                <div className="border-fixe">
+                  <img src={item.image} alt="skill" className="img-style" />
+                  <span className="skill-name  flex items-center justify-center text-center">
                     {item.name}
                   </span>
                 </div>

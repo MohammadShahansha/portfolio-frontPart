@@ -139,9 +139,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #f1e9e9;
-  font-weight: bold;
   opacity: 0;
-  font-size: 2rem;
   transition: opacity 0.3s ease-in-out;
   background: rgba(0, 0, 0, 0.6);
   padding: 5px 10px;
