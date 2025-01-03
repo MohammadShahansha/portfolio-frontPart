@@ -11,8 +11,26 @@
 .ql-editor {
   color: white !important; /* Set the text color to white */
 }
+
 @media screen and (max-width: 575px) {
   .sidbar-button {
     width: 100%;
+  }
+
+  .bttn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    background: var(--main-color);
+    border: 3px solid var(--main-color);
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
   }
 }
