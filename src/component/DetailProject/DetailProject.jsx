@@ -39,7 +39,7 @@ const DetailProject = () => {
               <a href={frontedGithubLink} className="bttn">
                 Front-End Code
               </a>
-              <a href={serverGithubLink} className="bttn">
+              <a href={serverGithubLink} className="bttn hover:text-[#00abf0]">
                 Back-End Code
               </a>
             </div>
