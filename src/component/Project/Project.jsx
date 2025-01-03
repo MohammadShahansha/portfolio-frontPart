@@ -37,8 +37,8 @@ const Project = () => {
             <div>
               <div className="flex items-center mt-[-15px] mb-2">
                 <h1 className=" font-bold text-[--text-color]">
-                  Technologys:{" "}
-                  <span className=" font-medium">{project?.tachnologies}</span>
+                  Project Name:{" "}
+                  <span className=" font-medium">{project?.name}</span>
                 </h1>
               </div>
               <div class="image-wrap mb-[-10px]">

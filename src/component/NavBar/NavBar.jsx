@@ -13,7 +13,7 @@ const NavBar = () => {
       <li>
         <Link
           to="/"
-          className={`text-2xl font-semibold ${
+          className={`text-xl font-semibold ${
             activeRoute === "/" ? "text-[--main-color]" : ""
           }`}
         >
@@ -23,7 +23,7 @@ const NavBar = () => {
       <li>
         <Link
           to="/about"
-          className={`text-2xl font-semibold ${
+          className={`text-xl font-semibold ${
             activeRoute === "/about" ? "text-[--main-color]" : ""
           }`}
         >
@@ -33,7 +33,7 @@ const NavBar = () => {
       <li>
         <Link
           to="/skills"
-          className={`text-2xl font-semibold ${
+          className={`text-xl font-semibold ${
             activeRoute === "/skills" ? "text-[--main-color]" : ""
           }`}
         >
@@ -43,17 +43,17 @@ const NavBar = () => {
       <li>
         <Link
           to="/project"
-          className={`text-2xl font-semibold ${
+          className={`text-xl font-semibold ${
             activeRoute === "/project" ? "text-[--main-color]" : ""
           }`}
         >
-          Project
+          Projects
         </Link>
       </li>
       <li>
         <Link
           to="/contact"
-          className={`text-2xl font-semibold ${
+          className={`text-xl font-semibold ${
             activeRoute === "/contact" ? "text-[--main-color]" : ""
           }`}
         >
@@ -63,7 +63,7 @@ const NavBar = () => {
       <li>
         <Link
           to="/blog"
-          className={`text-2xl font-semibold ${
+          className={`text-xl font-semibold ${
             activeRoute === "/blog" ? "text-[--main-color]" : ""
           }`}
         >
