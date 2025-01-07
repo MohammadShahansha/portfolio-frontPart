@@ -34,19 +34,57 @@ const About = () => {
             </p>
           </div>
           <div className="my-5">
+            <h2 className="font-semibold text-2xl ">Learning Experience:</h2>
+            <p className="text-gray-400 mb-2">
+              I have two years of hands-on learning in full-stack web
+              development, during which I built various projects using modern
+              technologies like React.js, Next.js, Node.js, and MongoDB. My
+              projects include e-commerce platforms, management systems, and
+              feature-rich dashboards with role-based functionalities.
+            </p>
+            <p className="text-gray-400">
+              I specialize in creating responsive, user-friendly interfaces with
+              Tailwind CSS, Material-UI, and Ant Design, and have practical
+              experience in authentication, data visualization, and performance
+              optimization. My learning journey reflects a passion for building
+              impactful applications and continuously improving my skills.
+            </p>
+          </div>
+          <div className="">
+            <h2 className="font-semibold text-2xl ">Languages:</h2>
+            <p className="text-gray-400">
+              I am fluent in Bangla and have a good command of English, allowing
+              me to effectively communicate and collaborate in diverse settings.
+            </p>
+          </div>
+        </div>
+        <div className="w-full right-about">
+          <div className="">
             <h2 className="font-semibold text-2xl ">
               Education and Certifications:
             </h2>
             <p className="text-gray-400">
-              I study in Informatin & Communication Technology from Comilla
-              University. However, I achieved 95% marks in the Programming Hero
-              course and earned a certification that reflects my commitment to
-              continuous learning and excellence. My education has equipped me
-              with the skills to tackle complex challenges and deliver top-notch
-              solutions.
+              Recently I have completed my graduation majoring in Engineering in
+              Information and Communication Technology from Comilla University.
+              During my study time I completed two programming course form
+              Programming Hero institute. One is a
+              <a
+                href="https://drive.google.com/file/d/102jAvramTfdz16L_S8kgZYa8w0PqEkdv/view"
+                className="ml-1 font-semibold"
+              >
+                "Complete Web Development Course with Jhankar Mahbub"
+              </a>{" "}
+              nd another is{" "}
+              <a
+                href="https://drive.google.com/file/d/1oVO3kGN4In_r0OfQX6mPpk19LwLEtLXu/view"
+                className="font-semibold"
+              >
+                "Next Level Web Development"
+              </a>
             </p>
           </div>
-          <div className="">
+
+          <div className="my-5">
             <h2 className="font-semibold text-2xl ">
               Personal Interests and Values:
             </h2>
@@ -55,28 +93,6 @@ const About = () => {
               passionate about helping others and sharing my knowledge with the
               community. These interests drive my dedication and integrity in my
               work.
-            </p>
-          </div>
-        </div>
-        <div className="w-full right-about">
-          <div>
-            <h2 className="font-semibold text-2xl ">
-              Professional Experience:
-            </h2>
-            <p className="text-gray-400">
-              I have developed projects like PatsSmart, craft & art school,
-              shoes shop etc. My expertise includes building RESTful APIs with
-              Node.js and Express.js, and creating responsive front-ends with
-              React, Next and Tailwind CSS. I also have experience with MongoDB,
-              Firebase, and PostgreSQL, and am proficient in integrating
-              third-party APIs and optimizing performance.
-            </p>
-          </div>
-          <div className="my-5">
-            <h2 className="font-semibold text-2xl ">Languages:</h2>
-            <p className="text-gray-400">
-              I am fluent in Bangla and have a good command of English, allowing
-              me to effectively communicate and collaborate in diverse settings.
             </p>
           </div>
           <div className="my-5">
