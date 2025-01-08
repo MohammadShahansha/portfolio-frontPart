@@ -72,7 +72,7 @@ const About = () => {
                 href="https://drive.google.com/file/d/102jAvramTfdz16L_S8kgZYa8w0PqEkdv/view"
                 className="ml-1 font-semibold"
               >
-                "Complete Web Development Course with Jhankar Mahbub"
+                "Complete Web Development"
               </a>{" "}
               nd another is{" "}
               <a
