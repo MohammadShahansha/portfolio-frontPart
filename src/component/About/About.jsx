@@ -74,7 +74,7 @@ const About = () => {
               >
                 "Complete Web Development"
               </a>{" "}
-              nd another is{" "}
+              and another is{" "}
               <a
                 href="https://drive.google.com/file/d/1oVO3kGN4In_r0OfQX6mPpk19LwLEtLXu/view"
                 className="font-semibold"
@@ -98,7 +98,7 @@ const About = () => {
           <div className="my-5">
             <h2 className="font-semibold text-2xl ">Others About Me:</h2>
             <p className="text-gray-400">
-              I am unmarrid and 25 years old. I am from Bangladesh and distric
+              I am unmarrid and 25+ years old. I am from Bangladesh and distric
               Kishroeganj. I believe in maintaining a balance between my
               professional and personal life, and these aspects inspire my
               dedication to my work.
